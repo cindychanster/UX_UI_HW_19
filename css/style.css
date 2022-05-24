@@ -68,7 +68,7 @@ html {
   .menu-button::before,
   .menu-button::after {
     display: block;
-    background-color: rgb(135, 7, 247);
+    background-color:#2978B5;
     position: absolute;
     height: 4px;
     width: 30px;
@@ -92,7 +92,7 @@ html {
   }
   
   #menu-toggle:checked + .menu-button-container .menu-button {
-    background: rgba(255, 255, 255, 0);
+    background: rgba(159, 209, 127, 0);
   }
   
   #menu-toggle:checked + .menu-button-container .menu-button::after {
@@ -109,7 +109,7 @@ html {
     .menu {
       position: absolute;
       top: 0;
-      margin-top: 50px;
+      margin-top: 130px;
       left: 0;
       flex-direction: column;
       width: 100%;
@@ -124,7 +124,7 @@ html {
       transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
     #menu-toggle:checked ~ .menu li {
-      border: 1px solid #333;
+      border: 1px solid #ffffff;
       height: 2.5em;
       padding: 0.5em;
       transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -136,10 +136,10 @@ html {
       padding: 0.5em 0;
       width: 100%;
       color: white;
-      background-color: #222;
+      background-color: white;
     }
     .menu > li:not(:last-child) {
-      border-bottom: 1px solid #444;
+      border-bottom: 1px solid #ffffff;
     }
   }
 
@@ -508,9 +508,10 @@ li {
     text-decoration: none;
   }
   button:focus {
-    outline-width: 3px;
-    outline-style: dashed;
-    outline-color: #2978B5;
+    color: white;
+    background-color: #2978B5;
+
+    font-weight: medium;
     text-decoration: none;
   }
   
